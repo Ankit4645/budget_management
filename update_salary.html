@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Update Expenses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(244, 244, 244, 0.5); /* Semi-transparent white background */
+            background-image: url('background.jpg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color:#333; /* White text color */
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333; /* Dark text color */
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            background-color: #8b65ff; /* Purple background color */
+            color: #fff; /* White text color */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6345b0; /* Darker purple on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>UPDATE SALARY</h2>
+        <form action="SalaryUpdateServlet" method="post">
+            <label for="email">Employee Email:</label>
+            <input type="text" id="email" name="email" required><br><br>
+            <label for="expenses">New Salary:</label>
+            <input type="number" id="expenses" name="expenses" required><br><br>
+            <input type="submit" value="Update Expenses">
+        </form>
+    </div>
+</body>
+</html>

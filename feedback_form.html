@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+        }
+
+        .container {
+            background-color: #ffffff; /* Opaque white background for the container */
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form action="SubmitFeedbackServlet" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required><br><br>
+
+            <p>Question 1: How satisfied are you with our service?</p>
+            <input type="radio" id="q1_1" name="question1" value="Very satisfied">
+            <label for="q1_1">Very satisfied</label><br>
+            <input type="radio" id="q1_2" name="question1" value="Satisfied">
+            <label for="q1_2">Satisfied</label><br>
+            <input type="radio" id="q1_3" name="question1" value="Neutral">
+            <label for="q1_3">Neutral</label><br>
+            <input type="radio" id="q1_4" name="question1" value="Dissatisfied">
+            <label for="q1_4">Dissatisfied</label><br>
+            <input type="radio" id="q1_5" name="question1" value="Very dissatisfied">
+            <label for="q1_5">Very dissatisfied</label><br><br>
+
+            <p>Question 2: How likely are you to recommend us to others?</p>
+            <input type="radio" id="q2_1" name="question2" value="Very likely">
+            <label for="q2_1">Very likely</label><br>
+            <input type="radio" id="q2_2" name="question2" value="Likely">
+            <label for="q2_2">Likely</label><br>
+            <input type="radio" id="q2_3" name="question2" value="Neutral">
+            <label for="q2_3">Neutral</label><br>
+            <input type="radio" id="q2_4" name="question2" value="Unlikely">
+            <label for="q2_4">Unlikely</label><br>
+            <input type="radio" id="q2_5" name="question2" value="Very unlikely">
+            <label for="q2_5">Very unlikely</label><br><br>
+
+            <p>Question 3: How clear was our communication?</p>
+            <input type="radio" id="q3_1" name="question3" value="Very clear">
+            <label for="q3_1">Very clear</label><br>
+            <input type="radio" id="q3_2" name="question3" value="Clear">
+            <label for="q3_2">Clear</label><br>
+            <input type="radio" id="q3_3" name="question3" value="Neutral">
+            <label for="q3_3">Neutral</label><br>
+            <input type="radio" id="q3_4" name="question3" value="Unclear">
+            <label for="q3_4">Unclear</label><br>
+            <input type="radio" id="q3_5" name="question3" value="Very unclear">
+            <label for="q3_5">Very unclear</label><br><br>
+
+            <label for="comment">Additional Comments:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

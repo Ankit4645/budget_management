@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Update Designation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgba(244, 244, 244, 0.5); /* Semi-transparent white background */
+            background-image: url('background.jpg'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 100px;
+            color: #fff;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333; /* White text color */
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9); /* Transparent white background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #333; /* Dark text color */
+        }
+
+        input[type="email"],
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            width: 300px;
+            padding: 10px;
+            border: none;
+            background-color: #8b65ff; /* Purple background color */
+            color: #fff; /* White text color */
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6345b0; /* Darker purple on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>UPDATE DESIGNATION</h2>
+        <form action="UpdateDesignationServlet" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="designation">New Designation:</label>
+            <input type="text" id="designation" name="designation" required><br><br>
+            <input type="submit" value="Update Designation">
+        </form>
+    </div>
+</body>
+</html>
